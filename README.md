@@ -2,7 +2,7 @@
 
 This is just a little project I made a while ago for an ESP32 to read infrared codes from a connected IR sensor and then forward them to a Home Assistant event listener via API endpoint.
 
-It's useful if you want a way to control your HA devices with a remote control. All the logic must be done within Home Assistant, this only forwards the IR codes to it.
+It's useful if you want a way to control your HA devices with a remote control. All the logic must be done within Home Assistant, this only forwards the IR codes to it. This code also sends the IR data across another serial connection on the TX RX pins, which I use to connect it to another ESP32 that controls my Chromecast with Google TV over Bluetooth.
 
 If you want to try it for yourself, you'll need to make a `private_constants.h` file within `/src`:
 ```
